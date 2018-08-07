@@ -22,7 +22,9 @@
 	<script src="/storybooks-hongkong/js/sbc.js"></script>
 </head>
 
+
   <body>
+
 
     <div class="container">
 
@@ -32,20 +34,21 @@
 			<object type="image/svg+xml" data="/storybooks-hongkong/images/sbhk_logo.svg" width="100" height="100" border="0"></object>
 		</a>
 		<div class="btn-group btn-group-block">
-			<a href="/storybooks-hongkong/" class="btn btn-primary">Home</a>
+			<a href="/storybooks-hongkong/" class="btn btn-primary">首頁</a>
 			<div class="dropdown">
-				<a href="#" class="btn btn-primary dropdown-toggle" tabindex="0">About</a>
+				<a href="#" class="btn btn-primary dropdown-toggle" tabindex="0">關於</a>
 				<ul class="menu">
-					<li class="menu-item"><a href="/storybooks-hongkong/about">About us</a></li>
+					<li class="menu-item"><a href="/storybooks-hongkong/about">關於我們</a></li>
+					<li class="menu-item"><a href="/storybooks-hongkong/about/languages">語言</a></li>
 				</ul>
 			</div>
-			<a href="/storybooks-hongkong/how-to" class="btn btn-primary">How to use this website</a>
-			<a href="/storybooks-hongkong/contact" class="btn btn-primary">Contact us</a>
+			<a href="/storybooks-hongkong/how-to" class="btn btn-primary">如何使用本站資源</a>
+			<a href="/storybooks-hongkong/contact" class="btn btn-primary">聯絡我們</a>
 		</div>
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a></div>
+        <div class="float-right"><a class="btn btn-lg disabled" target="_blank" href="">下載PDF</a></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -78,41 +81,44 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1 dir="rtl"><span class="def">دادی کے کیلے</span>
+		<h1><span class="def">دادی کے کیلے</span>
 			<span class="l1">婆婆嘅香蕉</span>
 			<span class="l2">奶奶的香蕉</span>
+			<span class="l3">Grandma's bananas</span>
 			<div class="btn-group">
 				<a href="#text02" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
 				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="Play/pause"><i class="icon-volume-up"></i></button>
-				<audio id="audio01" onended="resetbutton('01')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/01.mp3"></audio>
-				<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-				<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+				<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/01.mp3"></audio>
+				<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="Switch between 烏都語 and 粵語">yue</button>
+				<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="Switch between 烏都語 and 國語">zh</button>
+				<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="Switch between 烏都語 and 英語">en</button>
 			</div>
 		</h1>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Written by"><img class="cover-icon" src="/storybooks-hongkong/css/pencil.svg" alt="Written by" width="38px"></span> Ursula Nafula</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Illustrated by"><img class="cover-icon" src="/storybooks-hongkong/css/art.svg" alt="Illustrated by" width="38px"></span> Catherine Groenewald</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Translated by"><img class="cover-icon" src="/storybooks-hongkong/css/global.svg" alt="Translated by" width="38px"></span> Samrina Sana</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Read by"><img class="cover-icon" src="/storybooks-hongkong/css/megaphone.svg" alt="Read by" width="38px"></span> Sadia Shad</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Language"><img class="cover-icon" src="/storybooks-hongkong/css/language.svg" alt="Language" width="38px"></span> <a href="/storybooks-hongkong/stories/ur">Urdu</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Level"><img class="cover-icon" src="/storybooks-hongkong/css/level.svg" alt="Level" width="38px"></span> <a href="/storybooks-hongkong/stories/ur/level4">Level 4</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="Narrate story"><img class="cover-icon" src="/storybooks-hongkong/css/speaker.svg" alt="Narrate full story" width="38px"></span> <audio id="audioplayer" controls><source src="http://globalstorybooks.net/media/audio/ur/0294/ur-0294_grandma.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="作者"><img class="cover-icon" src="/storybooks-hongkong/css/pencil.svg" alt="作者" width="38px"></span> Ursula Nafula</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="插圖"><img class="cover-icon" src="/storybooks-hongkong/css/art.svg" alt="插圖" width="38px"></span> Catherine Groenewald</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="譯文"><img class="cover-icon" src="/storybooks-hongkong/css/global.svg" alt="譯文" width="38px"></span> Samrina Sana</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="講述"><img class="cover-icon" src="/storybooks-hongkong/css/megaphone.svg" alt="講述" width="38px"></span> Sadia Shad</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon" src="/storybooks-hongkong/css/language.svg" alt="語言" width="38px"></span> <a href="/storybooks-hongkong/stories/ur">烏都語</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon" src="/storybooks-hongkong/css/level.svg" alt="級別" width="38px"></span> <a href="/storybooks-hongkong/stories/ur/level4">Level 4</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="唸出來整故事"><img class="cover-icon" src="/storybooks-hongkong/css/speaker.svg" alt="唸出來整故事" width="38px"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ur/0294/ur-0294_grandma.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
 
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/02.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	دادی کا باغ بہت حیرت انگیز، جوار، باجرے اور کساوا سے بھرا تھا۔ لیکن اُن سب سے بہترین کیلے تھے۔ حالانکہ دادی کے کئی پوتے پوتیاں تھے، لیکن مجھے یہ راز معلوم تھا کہ میں دادی کی سب سے پسندیدہ ہوں۔ وہ اکثر مجھے اپنے گھر پہ مدعو کرتی تھیں۔ وہ مجھے چھوٹے موٹے راز بھی بتاتیں۔ لیکن ایک ایسا راز تھا جو اُنہوں نے مجھے نہیں بتایا کہ اُنہوں نے کیلے پکنے کے لیے کہاں رکھے ہیں۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	婆婆有個好靚嘅花園，種滿晒啲高粱，小米同埋木薯，但係咁多嘢入面最好嘅就係香蕉。婆婆雖然有好多孫仔孫女，但係我心入面知道佢最鍾意我㗎。佢時時都會請我嚟佢屋企玩，講啲小秘密俾我聽。但係有一個秘密佢從來都冇試過同我講，就係佢催熟香蕉嘅辦法。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	奶奶有一座美麗的大花園，裡面種滿了高粱，雜穀和木薯，但裡面最棒的是香蕉。奶奶雖然有很多孫子孫女，但我心裡知道她最喜歡我。她常常邀請我去她家，告訴我一些小秘密。但是有一個秘密，她從來沒有告訴我，那就是她催熟香蕉的辦法。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	Grandma's garden was wonderful, full of sorghum, millet, and cassava.
 
 But best of all were the bananas.
@@ -125,12 +131,13 @@ But there was one secret she did not share with me: where she ripened bananas.
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio02" onended="resetbutton('02')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/02.mp3"></audio>
+		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/02.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -139,17 +146,17 @@ But there was one secret she did not share with me: where she ripened bananas.
 
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/03.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	ایک دن میں نے دادی کے گھر کے باہر ایک ٹوکری کو سورج کی روشنی میں پڑے ہوئے دیکھا۔ جب میں نے پوچھا کہ یہ کس لیے ہے تو مجھے صرف یہ جواب ملا کہ یہ میری جادوئی ٹوکری ہے۔ ٹوکری سے آگے کئی کیلوں کے پتے پڑے تھے جو دادی کچھ کچھ دیر بعد پلٹ دیتیں۔ میں تجسس میں تھی کہ یہ پتے کس لیے ہیں؟ مجھے صرف یہ جواب ملا کہ یہ میرے جادوئی پتے ہیں۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	有一日，我見到婆婆放咗一個巨大嘅草籃喺門外。我問婆婆呢個係攞嚟做咩嘢嘅，但係婆婆就單單話：「呢個係我嘅神秘籃仔。」喺籃仔一邊放咗幾塊香蕉葉，婆婆間中都會去翻轉啲葉幾下。我好好奇，就問婆婆：「呢啲葉係攞嚟做咩嘢嘅？」但係婆婆只係應咗一句：「呢啲係我嘅神秘葉仔。」
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	有一天，我看到奶奶在門外放了一個巨大的麥稈編成的籃子。我問奶奶這是做什麼的，奶奶卻只說：“這是我的神秘籃子。”籃子旁邊放了幾片香蕉葉子，奶奶把葉子來回翻動。我很好奇，問奶奶：“這些葉子是做什麼的？”奶奶卻只說：“這是我的神秘葉子。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	One day I saw a big straw basket placed in the sun outside Grandma's house. When I asked what it was for, the only answer I got was, "It's my magic basket."
 
 Next to the basket, there were several banana leaves that Grandma turned from time to time. I was curious. "What are the leaves for, Grandma?" I asked. The only answer I got was, "They are my magic leaves."
@@ -158,12 +165,13 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio03" onended="resetbutton('03')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/03.mp3"></audio>
+		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/03.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -172,17 +180,17 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/04.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	دادی کو، کیلوں کو، کیلوں کے پتوں کو اور اُس بڑی ٹوکری کو دیکھنا بہت دلچسپ تھا۔ لیکن دادی نے مجھے امی کے پاس واپس جانے کو کہا۔ دادی میں آپ سے درخواست کرتی ہوں کہ مجھے یہ سب دیکھنے دیں جیسے آپ تیار کر رہی ہیں۔ ڈھیٹ مت بنو، بچے، ویسا کرو جیسا تمہیں کہا گیا ہے۔ اُن کے اصرار کرنے پر میں بھاگنے لگی۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	我好好奇噉睇住婆婆、香蕉、香蕉葉仲有嗰個巨大嘅草籃。但係婆婆就打發咗我去媽咪嗰便幫手。我噅住婆婆就話：「俾我留响度睇吓啦！」但係婆婆就堅持話：「唔好咁硬頸啦，小朋友，照我講嘅去做啦。」我唯有走開囉。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	我好奇地看著奶奶，香蕉，香蕉葉子還有那個巨大的麥稈編成的籃子。但奶奶卻把我打發到媽媽那兒跑腿。我求奶奶：“讓我留下來看一看吧！”奶奶卻堅持說：“別固執了，按我說的去做。”我只好跑開了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	It was so interesting watching Grandma, the bananas, the banana leaves and the big straw basket. But Grandma sent me off to my mother on an errand.
 
 "Grandma, please, let me watch as you prepare..."
@@ -193,12 +201,13 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio04" onended="resetbutton('04')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/04.mp3"></audio>
+		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/04.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -207,17 +216,17 @@ Next to the basket, there were several banana leaves that Grandma turned from ti
 
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/05.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	جب میں واپس آئ نہ دادی اور نہ ہی ٹوکری موجود تھی۔ دادی ٹوکری کہاں ہے سارے کیلے کہاں ہیں اور کہاں۔۔۔ لیکن مجھے صرف یہ جواب ملا کہ وہ سب میری جادوئی جگہ میں ہیں۔ یہ سب بہت مایوس کن تھا۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	到我返嚟嗰陣時，婆婆正坐喺外便唞吓，但係就唔見個籃同香蕉！我就問婆婆：「個籃去咗邊度呀？香蕉去咗邊度呀？仲有嗰啲......」但係婆婆只係應咗一句：「佢哋都喺一個神秘嘅地方。」我好失望！
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	當我回來的時候，奶奶正坐在外面休息，但是籃子和香蕉都不見了！我問奶奶：“籃子去哪兒了？香蕉去哪兒了？還有那些......”奶奶卻說：“它們都在一個神秘的地方。”我太沮喪了！
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	When I returned, Grandma was sitting outside but with neither the basket nor the bananas.
 
 "Grandma, where is the basket, where are all the bananas, and where..."
@@ -228,12 +237,13 @@ But the only answer I got was, "They are in my magic place." It was so disappoin
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio05" onended="resetbutton('05')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/05.mp3"></audio>
+		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/05.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -242,17 +252,17 @@ But the only answer I got was, "They are in my magic place." It was so disappoin
 
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/06.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	دو دن بعد دادی نے مجھے اپنے کمرے سے اپنی چلنے والی لکڑی اُٹھانے کے لیے بھیجا۔ جلد از جلد میں نے دروازہ کھولا تو خوب پکے ہوئے کیلوں کی خوشبو نے میرا استقبال کیا۔ اندرونی کمرے میں دادی کا بڑا جادو تھا جو کہ وہ ٹوکری تھی۔ وہ ایک پرانے کمبل کی مدد سے بہت اچھی طرح چھپائی گئی تھی۔ میں نے اُسے اُٹھایا اور اُس کی بے مثال خوشبو سے محزوز ہوئ۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	過咗兩日時間，婆婆就叫我由佢間房度攞佢支士的嚟俾佢。我一打開道門，就聞到朕熟香蕉嘅味道。原來婆婆嘅神秘籃仔就擺响佢間房度！上面𢫏咗條舊毛氈，我揭開條毛氈，大力噉聞嗰朕香噴噴嘅味道。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	過了兩天，奶奶讓我從她的臥室拿柺杖給她。我一打開門，就聞到了熟香蕉的味道。原來奶奶的神秘籃子就放在臥室裡！它上面蓋了一條舊毯子，我掀起毯子，使勁地聞著那香味。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	Two days later, Grandma sent me to fetch her walking stick from her bedroom.
 
 As soon as I opened the door, I was welcomed by the strong smell of ripening bananas. In the inner room was grandma's big magic straw basket. It was well hidden by an old blanket. I lifted it and sniffed that glorious smell.
@@ -261,12 +271,13 @@ As soon as I opened the door, I was welcomed by the strong smell of ripening ban
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio06" onended="resetbutton('06')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/06.mp3"></audio>
+		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/06.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -275,17 +286,17 @@ As soon as I opened the door, I was welcomed by the strong smell of ripening ban
 
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/07.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	دادی کی آواز نے مجھے چوکنا کر دیا، تم کیا کر رہی ہو؟ جلدی میری لکڑی لے کر آو۔ میں تیزی سے اُن کی لکڑی لے کر پہنچی۔ تم کس وجہ سے مسکرا رہی ہوَ؟ دادی نے پوچھا؟ اُن کے اس سوال نے مجھے احساس دلایا کہ میں اب بھی اُن کی جادوئی جگہ کو دریافت کرنے پر مسکرا رہی ہوں۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	婆婆嗌我嘅時候，嚇咗我一跳：「你喺度做緊乜嘢？快啲攞我支士的嚟。」我趕緊攞咗支士的出去俾婆婆。婆婆睇住我，就問：「你喺度笑緊乜嘢呀？」我先至意識到，我仲喺度因為發現咗呢個神奇嘅秘密而偷笑緊。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	奶奶喊我的時候，我嚇了一跳：“你在做什麼？快把我的柺杖拿來。”我趕緊把柺杖拿出去給奶奶。奶奶看著我，問：“你在笑什麼？”我這才意識到，我還在因為發現了這個神奇的秘密竊笑著。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	Grandma's voice startled me when she called, "What are you doing? Hurry up and bring me the stick."
 
 I hurried out with her walking stick. "What are you smiling about?" Grandma asked.
@@ -296,12 +307,13 @@ Her question made me realise that I was still smiling at the discovery of her ma
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio07" onended="resetbutton('07')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/07.mp3"></audio>
+		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/07.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -310,17 +322,17 @@ Her question made me realise that I was still smiling at the discovery of her ma
 
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/08.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	اگلے دن جب دادی میری امی سے ملنے آئیں۔ میں بھاگتے ہوئے اُن کے گھر پہنچی تاکہ ایک بار پھر کیلوں کو دیکھ سکوں۔ وہاں پر پکے ہوئے کیلوں کا ایک گھچا موجود تھا میں نے اُسے اُٹھایا اور اپنے کپڑوں میں چھپا لیا۔ ٹوکری کو دوبارہ ڈھانپنے کے بعد میں گھر کے پیچھے گئ اور جلدی سے کیلے کھا لیے۔ آج سے پہلے میں نے اتنے لذیذ اور رسیلے کیلے کبھی نہیں کھائے تھے۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	第二日呢，婆婆嚟睇我媽咪，我又走到婆婆屋企去偷睇嗰啲熟香蕉。有一梳香蕉已經非常之熟嘞。我摘咗一條香蕉，收埋咗佢喺我條裙仔度。𢫏返好個籃仔之後，我就走到間屋後面，偷偷噉食咗條香蕉：呢個絕對係我食過最好味嘅香蕉嚟！
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	第二天，奶奶來看我媽媽，我又跑到奶奶家去偷看那些熟香蕉。有一把香蕉已經非常熟了。我採了一根香蕉，把它藏在我的裙子裡。我小心地蓋好籃子，跑到房子後面，偷偷地把香蕉吃了：這是我吃過的最美味的香蕉！
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	The following day when grandma came to visit my mother, I rushed to her house to check the bananas once more.
 
 There was a bunch of very ripe ones. I picked one and hid it in my dress. After covering the basket again, I went behind the house and quickly ate it. It was the sweetest banana I had ever tasted.
@@ -329,12 +341,13 @@ There was a bunch of very ripe ones. I picked one and hid it in my dress. After 
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio08" onended="resetbutton('08')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/08.mp3"></audio>
+		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/08.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -343,17 +356,17 @@ There was a bunch of very ripe ones. I picked one and hid it in my dress. After 
 
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/09.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	اگلے دن جب دادی باغ میں سبزی چُن رہی تھیں میں نے کیلوں کو دیکھا۔ تقریباً سب پک چکے تھے۔ چار کیلوں کا ایک گچھا اُٹھائے بغیر مجھ سے رہا نہیں گیا۔ میں آہستہ آہستہ دروازے کی طرف بڑھ رہی تھا تو میں نے دادی کے کھانسنے کی آواز سُنی۔ میں نے کیلوں کو اپنے لباس میں چھپانے کی کو شش کی اور اُن کے پاس سے گزر گئ۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	第二日，我趁婆婆喺花園度摘蔬菜嘅時候，又偷偷走入佢間房去睇嗰啲香蕉。啲香蕉差唔多全部都熟晒嘞。我就頂唔順誘惑，攞咗四條香蕉。我趷高腳離開佢間房，就聽到婆婆喺度咳緊。我收埋啲香蕉喺條裙仔下底，好似乜都冇發生過噉就走開咗。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	第二天，我趁奶奶在花園裡摘蔬菜的時候，偷偷跑進房間，去看那些香蕉，香蕉差不多全都熟了。我禁不住誘惑，拿了四根香蕉。我踮起腳離開房間，聽到奶奶在咳嗽。我把香蕉藏在裙子下面，若無其事地走開了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	The following day, when grandma was in the garden picking vegetables, I sneaked in and peered at the bananas.
 
 Nearly all were ripe. I couldn't help taking a bunch of four.
@@ -364,12 +377,13 @@ As I tiptoed towards the door, I heard grandma coughing outside. I just managed 
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text10" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio09" onended="resetbutton('09')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/09.mp3"></audio>
+		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/09.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -378,17 +392,17 @@ As I tiptoed towards the door, I heard grandma coughing outside. I just managed 
 
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/10.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	اگلا دن بازار جانے کا دن تھا۔ دادی جلدی اُٹھ گئیں۔ وہ ہمیشہ کیلے اور کساوے بازار بیچنے لے جاتیں۔ اُس دن میں اُن سے ملنے کی جلدی میں نہیں تھی لیکن میں اُنہیں زیا دہ دیر کے لیے چھوڑ نہ سکی۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	第二日係婆婆趁墟打市嘅日子。婆婆好早就起身，佢將成熟咗嘅香蕉同木薯運到墟場度去賣。我嗰日冇急住去睇佢，但係我知道，我冇可能永遠避開婆婆。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	第二天是奶奶趕集的日子。奶奶很早就醒來了，她把成熟的香蕉和木薯運到集市上去賣。我那天沒有急著去看她，但我知道，我不可能永遠躲著奶奶。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	The following day was market day. Grandma woke up early. She always took ripe bananas and cassava to sell at the market.
 
 I did not hurry to visit her that day. But I could not avoid her for long.
@@ -397,12 +411,13 @@ I did not hurry to visit her that day. But I could not avoid her for long.
 	<div class="btn-group switcher-group">
 		<a href="#text09" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#text11" class="btn btn-lg" title="Next page"><i class="icon-arrow-down"></i></a>
-		<audio id="audio10" onended="resetbutton('10')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/10.mp3"></audio>
+		<audio id="audio10" onended="resetbutton('10')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/10.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton10" onclick="playpause('10')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="在烏都語與粵語間切換">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="在烏都語與國語間切換">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="在烏都語與英語間切換">en</button>
 	</div>
 </div>
 
@@ -411,17 +426,17 @@ I did not hurry to visit her that day. But I could not avoid her for long.
 
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0294/11.jpg"></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt def"><h3>
 	اُس شام بعد میں، مجھے میرے امی ابو اور دادی نے بلایا۔ میں جانتی تھی۔ اُس رات جیسے ہی میں سونے کے لیے لیٹی میں جانتی تھی کہ میں دوبارہ چوری نہیں کروں گی، نہ دادی کے گھر سے، نہ ماں باپ کے گھر سے اور نہ ہی کہیں اور سے۔
 	</h3></div>
 
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l1"><h3>
 	嗰日挨晚，我被爹哋媽咪同埋婆婆叫咗過去。我知道佢哋點解搵我。嗰日晚上，當我上床瞓覺嘅時候，我知道我再又唔會偷嘢啦，唔偷婆婆嘅，唔偷爹哋媽咪嘅，邊個啲嘢都唔可以再偷。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l2"><h3>
 	那天傍晚，我被爸爸、媽媽和奶奶叫過去。我知道他們為什麼找我。那天晚上，當我上床睡覺的時候，我知道我再也不會偷東西了，不偷奶奶的，不偷爸媽的，不從任何人那裡偷東西。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3 dir="rtl">
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 l3"><h3>
 	Later that evening I was called by my mother and father, and Grandma. I knew why.
 
 That night as I lay down to sleep, I knew I could never steal again, not from grandma, not from my parents, and certainly not from anyone else.
@@ -430,12 +445,13 @@ That night as I lay down to sleep, I knew I could never steal again, not from gr
 	<div class="btn-group switcher-group">
 		<a href="#text10" class="btn btn-lg" title="Previous page"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="Story credits"><i class="icon-arrow-down"></i></a>
-		<audio id="audio11" onended="resetbutton('11')" src="http://globalstorybooks.net/media/audio/ur/0294/mp3/11.mp3"></audio>
+		<audio id="audio11" onended="resetbutton('11')" src="https://globalstorybooks.net/media/audio/ur/0294/mp3/11.mp3"></audio>
 		<button class="btn btn-lg" id="playbutton11" onclick="playpause('11')" title="Play/pause"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
-		<button onclick="switchlang('ur,yue','yue,zh,ur')" class="btn btn-lg lang-primary" title="Switch between Urdu and 粵語">yue</button>
-		<button onclick="switchlang('ur,zh','yue,zh,ur')" class="btn btn-lg lang-secondary" title="Switch between Urdu and 國語">zh</button>
+		<button onclick="switchlang('ur,yue','yue,zh,en,ur')" class="btn btn-lg lang-primary" title="Switch between 烏都語 and 粵語">yue</button>
+		<button onclick="switchlang('ur,zh','yue,zh,en,ur')" class="btn btn-lg lang-secondary" title="Switch between 烏都語 and 國語">zh</button>
+		<button onclick="switchlang('ur,en','yue,zh,en,ur')" class="btn btn-lg lang-tertiary" title="Switch between 烏都語 and 英語">en</button>
 	</div>
 </div>
 
@@ -444,29 +460,31 @@ That night as I lay down to sleep, I knew I could never steal again, not from gr
 
 <div id="colophon" class="columns">
 	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h5>Written by: Ursula Nafula</h5>
-		<h5>Illustrated by: Catherine Groenewald</h5>
-		<h5>Translated by: Samrina Sana</h5>
-		<h5>Read by: Sadia Shad</h5>
-		<h5>Language: <a href="/storybooks-hongkong/stories/ur">Urdu</a></h5>
-		<h5><a href="/storybooks-hongkong/stories/ur/level4">Level 4</a></h5>
-		<h5>Source: <a href="http://africanstorybook.org/reader.php?id=2094" target="_blank">Grandma's bananas</a> from <a href="http://africanstorybook.org/">African Storybook</a></h5>
+		<h5>作者: Ursula Nafula</h5>
+		<h5>插圖: Catherine Groenewald</h5>
+		<h5>譯文: Samrina Sana</h5>
+		<h5>講述: Sadia Shad</h5>
+		<h5>語言: <a href="/storybooks-hongkong/stories/ur">烏都語</a></h5>
+		<h5><a href="/storybooks-hongkong/stories/ur/level4">4級</a></h5>
+		<h5>出處: 原文來自<a href="https://africanstorybook.org/">非洲故事書</a>的<a href="https://africanstorybook.org/reader.php?id=2094" target="_blank">Grandma's bananas</a></h5>
 
-		<left><a rel="license" href="http://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 International License</a>.</left>
+		<left><a rel="license" href="https://creativecommons.org/licenses/by/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />本故事的全部內容以<a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.zh">共享創意 署名 3.0</a>協議之條款下提供。</left>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
-		<h5>Read more <a href="/storybooks-hongkong/stories/ur/level4">level 4</a> stories:</h5>
+		<h5>讀多啲<a href="/storybooks-hongkong/stories/ur/level4">4級</a>故事:</h5>
 			<label class="chip"><a href="/storybooks-hongkong/stories/ur/0243/">دادی کے ساتھ چھٹیاں</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/ur/0072/">شہد خور چڑیا کا بدلہ</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/ur/0291/">ُوسی کی بہن نے کیا کہا؟</a></label>
 	</div>
 </div>
 <div>
-<h5>Options</h5>
-	<a class="btn btn-lg" href="/storybooks-hongkong/stories/ur" class="button">Back to stories list</a> <a class="btn btn-lg disabled" target="_blank" href="">Download PDF</a>
+<h5>選項</h5>
+	<a class="btn btn-lg" href="/storybooks-hongkong/stories/ur" class="button">返回故事列表</a> <a class="btn btn-lg disabled" target="_blank" href="">下載PDF</a>
 <br><br>
 </div>
+
+
 
     </div>
 
