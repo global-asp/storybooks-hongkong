@@ -67,7 +67,7 @@
 	</select>
 </div>
 
-        <a class="btn btn-lg" href="/storybooks-hongkong/stories/vi" class="button">返回故事列表</a><br><br>
+        <a class="btn btn-lg" href="/storybooks-hongkong/stories/vi">返回故事列表</a><br><br>
 
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0231/01.jpg"></div>
@@ -76,22 +76,22 @@
 			<span class="l1">天氣書</span>
 			<span class="l2">氣象書</span>
 			<span class="l3">Weather book</span>
-			<div class="btn-group">
-				<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-				<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="播放/暫停"><i class="icon-volume-up"></i></button>
-				<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/vi/0231/mp3/01.mp3"></audio>
-				<button onclick="switchlang('越,粵','粵,國,英,越')" class="btn btn-lg lang-primary" title="在越南語與粵語間切換">粵</button>
-				<button onclick="switchlang('越,國','粵,國,英,越')" class="btn btn-lg lang-secondary" title="在越南語與國語間切換">國</button>
-				<button onclick="switchlang('越,英','粵,國,英,越')" class="btn btn-lg lang-tertiary" title="在越南語與英語間切換">英</button>
-			</div>
 		</h1>
-		<h3><span class="tooltip tooltip-right" data-tooltip="作者"><img class="cover-icon" src="/storybooks-hongkong/css/pencil.svg" alt="作者" width="38px"></span> Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="插圖"><img class="cover-icon" src="/storybooks-hongkong/css/art.svg" alt="插圖" width="38px"></span> Sandra McDougall, Ingrid Schechter</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="譯文"><img class="cover-icon" src="/storybooks-hongkong/css/global.svg" alt="譯文" width="38px"></span> Phuong Nguyen</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon" src="/storybooks-hongkong/css/language.svg" alt="語言" width="38px"></span> <a href="/storybooks-hongkong/stories/vi">越南語</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon" src="/storybooks-hongkong/css/level.svg" alt="級別" width="38px"></span> <a href="/storybooks-hongkong/stories/vi/level1">Level 1</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="唸出來整故事"><img class="cover-icon" src="/storybooks-hongkong/css/speaker.svg" alt="唸出來整故事" width="38px"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/vi/0231/vi-0231_weather.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" width="38px" onclick="autoplay()"></span></h3>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/vi/0231/mp3/01.mp3"></audio>
+			<button onclick="switchlang('越,粵','粵,國,英,越')" class="btn btn-lg lang-primary" title="在越南語與粵語間切換">粵</button>
+			<button onclick="switchlang('越,國','粵,國,英,越')" class="btn btn-lg lang-secondary" title="在越南語與國語間切換">國</button>
+			<button onclick="switchlang('越,英','粵,國,英,越')" class="btn btn-lg lang-tertiary" title="在越南語與英語間切換">英</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="作者"><img class="cover-icon" src="/storybooks-hongkong/css/pencil.svg" alt="作者"></span> Clare Verbeek, Thembani Dladla, Zanele Buthelezi</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="插圖"><img class="cover-icon" src="/storybooks-hongkong/css/art.svg" alt="插圖"></span> Sandra McDougall, Ingrid Schechter</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="譯文"><img class="cover-icon" src="/storybooks-hongkong/css/global.svg" alt="譯文"></span> Phuong Nguyen</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/vi">越南語</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/vi/level1">Level 1</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="唸出來整故事"><img class="cover-icon" src="/storybooks-hongkong/css/speaker.svg" alt="唸出來整故事"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/vi/0231/vi-0231_weather.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -361,7 +361,7 @@
 		<h5><a href="/storybooks-hongkong/stories/vi/level1">1級</a></h5>
 		<h5>出處: 原文來自<a href="https://africanstorybook.org/">非洲故事書</a>的<a href="https://africanstorybook.org/reader.php?id=1861" target="_blank">Weather book</a></h5>
 
-		<left><a rel="license" href="https://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />本著作係採用<a rel="license" href="https://creativecommons.org/licenses/by-nc/3.0/deed.zh">共享創意 署名-非商業性 3.0</a>授權條款授權。</left>
+		<div><a rel="license" href="https://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank"><img alt="共享創意授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br />本著作係採用<a rel="license" href="https://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">共享創意 署名-非商業性 3.0</a>授權條款授權。</div>
 
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
