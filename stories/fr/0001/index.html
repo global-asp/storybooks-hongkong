@@ -16,13 +16,16 @@
 	<meta name="description" content="香港故事書提供一個完全免費開源的教育资源，旨在促進社區語言的識字和讀寫能力，並推廣家庭、學校、社區爲語言學習地點。這40篇譯成各種不同語言的故事來源於非洲故事書項目，按長度和詞彙量分成五個閱讀級別，並爲每一個語言版本錄製語音故事以增加閱讀的樂趣。香港故事書的預設語言爲香港“兩文三語”，即口頭和書寫的粵語、國語、以及英文，除此之外還有在坊間最爲普遍聽到和用到的語言和方言。
 ">
 	<link rel="stylesheet" href="/storybooks-hongkong/css/spectre.min.css">
+	<link rel="stylesheet" href="/storybooks-hongkong/css/gsn.min.css">
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/fr/0001/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
 	<script src="/storybooks-hongkong/js/sbc.js"></script>
 </head>
 
+
   <body>
+
 
     <div class="container">
 
@@ -80,19 +83,19 @@
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
 			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="播放/暫停"><i class="icon-volume-up"></i></button>
-			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/fr/0001/mp3/01.mp3"></audio>
+			<audio id="audio01" onended="resetbutton('01')" src="/storybooks-hongkong/audio/fr/0001/mp3/01.mp3"></audio>
 			<button onclick="switchlang('法,粵','粵,國,英,法')" class="btn btn-lg lang-primary" title="在法語與粵語間切換">粵</button>
 			<button onclick="switchlang('法,國','粵,國,英,法')" class="btn btn-lg lang-secondary" title="在法語與國語間切換">國</button>
 			<button onclick="switchlang('法,英','粵,國,英,法')" class="btn btn-lg lang-tertiary" title="在法語與英語間切換">英</button>
 		</div>
-		<h3><span class="tooltip tooltip-right" data-tooltip="作者"><img class="cover-icon" src="/storybooks-hongkong/css/pencil.svg" alt="作者"></span> Cornelius Gulere</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="插圖"><img class="cover-icon" src="/storybooks-hongkong/css/art.svg" alt="插圖"></span> Catherine Groenewald</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="譯文"><img class="cover-icon" src="/storybooks-hongkong/css/global.svg" alt="譯文"></span> Isabelle Duston, Véronique Biddau</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="講述"><img class="cover-icon" src="/storybooks-hongkong/css/megaphone.svg" alt="講述"></span> Alexandra Danahy</h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/fr">法語</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/fr/level2">Level 2</a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="唸出來整故事"><img class="cover-icon" src="/storybooks-hongkong/css/speaker.svg" alt="唸出來整故事"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/fr/0001/fr-0001_tall.mp3" type="audio/mpeg"></audio></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="作者"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/pencil.svg" alt="作者"></span> Cornelius Gulere</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="插圖"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/art.svg" alt="插圖"></span> Catherine Groenewald</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="譯文"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/global.svg" alt="譯文"></span> Isabelle Duston, Véronique Biddau</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="講述"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/megaphone.svg" alt="講述"></span> Monique Bournot-Trites</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/fr">法語</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/fr/level2">Level 2</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="/0001/fr-0001_tall.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <hr>
@@ -100,8 +103,7 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Sa houe était trop
-courte.
+	Sa houe était trop courte.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -133,8 +135,7 @@ courte.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Sa porte d’entrée était
-trop basse.
+	Sa porte d’entrée était trop basse.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -198,8 +199,7 @@ trop basse.
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Sa bicyclette était trop
-petite.
+	Sa bicyclette était trop petite.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -231,8 +231,7 @@ petite.
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Cet homme était trop
-grand.
+	Cet homme était trop grand.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -264,8 +263,7 @@ grand.
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Il fabriqua un long
-manche pour sa houe.
+	Il fabriqua un long manche pour sa houe.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -329,8 +327,7 @@ manche pour sa houe.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Il fabriqua un très grand
-lit.
+	Il fabriqua un très grand lit.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -362,8 +359,7 @@ lit.
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Il acheta une bicyclette
-très haute.
+	Il acheta une bicyclette très haute.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -395,10 +391,7 @@ très haute.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Il s’assit sur une chaise
-très haute et mangea
-avec une très grande
-fourchette.
+	Il s’assit sur une chaise très haute et mangea avec une très grande fourchette.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -430,11 +423,7 @@ fourchette.
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0001/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	Il quitta sa maison et
-vécut dans une grande
-forêt.
-Il vécut pendant de
-longues années.
+	Il quitta sa maison et vécut dans une grande forêt. Il vécut pendant de longues années.
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -468,7 +457,7 @@ longues années.
 		<h5>作者: Cornelius Gulere</h5>
 		<h5>插圖: Catherine Groenewald</h5>
 		<h5>譯文: Isabelle Duston, Véronique Biddau</h5>
-		<h5>講述: Alexandra Danahy</h5>
+		<h5>講述: Monique Bournot-Trites</h5>
 		<h5>語言: <a href="/storybooks-hongkong/stories/fr">法語</a></h5>
 		<h5><a href="/storybooks-hongkong/stories/fr/level2">2級</a></h5>
 		<h5>出處: 原文來自<a href="https://africanstorybook.org/">非洲故事書</a>的<a href="https://africanstorybook.org/reader.php?id=918" target="_blank">A very tall man</a></h5>
@@ -495,6 +484,8 @@ longues années.
 	<a class="btn btn-lg" href="/storybooks-hongkong/stories/fr" class="button">返回故事列表</a> <a class="btn btn-lg" href="https://globalstorybooks.net/media/sbhk/pdf/fr/fr-0001_tall.pdf" target="_blank">下載PDF</a>
 <br><br>
 </div>
+
+
 
     </div>
 
