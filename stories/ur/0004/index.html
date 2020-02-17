@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/ur/0004/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -78,7 +78,7 @@
 		<h1 dir="rtl"><span class="def">بکری، کتا اور گائے</span>
 			<span dir="ltr" class="l1">山羊、野狗、同水牛</span>
 			<span dir="ltr" class="l2">山羊、野狗、和水牛</span>
-			<span dir="ltr" class="l3">Goat, Dog and Cow</span>
+			<span class="l3">Goat, Dog and Cow</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
@@ -95,6 +95,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/ur">烏都語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/ur/level2">Level 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ur/0004/ur-0004_goat.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -112,7 +113,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	山羊、野狗、和水牛是很要好的朋友。有一天，他們一起坐出租車。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Goat, Dog, and Cow
 were great friends. One
 day they went on a
@@ -147,7 +148,7 @@ journey in a taxi.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	當他們到了目的地的時候，司機叫他們交車費。水牛把她自己的那份交了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	When they reached the
 end of their journey, the
 driver asked them to
@@ -183,7 +184,7 @@ paid her fare.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	野狗沒有帶零錢，所以他就多給了一點兒。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Dog paid a bit extra,
 because he did not
 have the correct money.
@@ -217,7 +218,7 @@ have the correct money.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	司機正要找錢給野狗，沒想到山羊沒有給錢就跑掉了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	The driver was about to
 give Dog his change
 when Goat ran away
@@ -253,7 +254,7 @@ anything.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	司機很生氣，結果他沒有給野狗找錢就開走了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	The driver was very
 annoyed. He drove
 away without giving
@@ -288,7 +289,7 @@ Dog his change.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	所以，現在你可以看到野狗看到車子就拼命追上去，因為他想叫司機給他找錢。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	That is why, even
 today, Dog runs
 towards a car to peep
@@ -325,7 +326,7 @@ change.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	山羊呢，一聽到有車來就嚇得趕快逃走，因為她怕沒交車費被人抓起來。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Goat runs away from
 the sound of a car. She
 is afraid she will be
@@ -361,7 +362,7 @@ her fare.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	可是水牛聽到車來一點兒都不急。她不慌不忙地過馬路，因為她知道她已經把她自己那份交了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	And Cow is not
 bothered when a car is
 coming. Cow takes her

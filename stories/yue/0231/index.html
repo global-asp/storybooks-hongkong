@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/yue/0231/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -95,6 +95,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/yue">粵語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/yue/level1">Level 1</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/yue/0231/yue-0231_weather.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>

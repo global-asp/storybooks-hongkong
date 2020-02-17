@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/ur/0291/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -78,7 +78,7 @@
 		<h1 dir="rtl"><span class="def">وُسی کی بہن نے کیا کہا؟</span>
 			<span dir="ltr" class="l1">夫思家姐講咗嘅說話</span>
 			<span dir="ltr" class="l2">福思的姐姐說了什麼</span>
-			<span dir="ltr" class="l3">What Vusi's sister said</span>
+			<span class="l3">What Vusi's sister said</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
@@ -95,6 +95,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/ur">烏都語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/ur/level4">Level 4</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ur/0291/ur-0291_vusi.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -112,7 +113,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	一天早上，福思的奶奶喚他過來說：“福思，你帶著這個雞蛋去你爸媽那兒吧！他們要為你姐姐的婚禮做一個大蛋糕。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	Early one morning Vusi’s granny
 called him, “Vusi, please take this
 egg to your parents. They want to
@@ -148,7 +149,7 @@ wedding.”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	福思帶著雞蛋上了路，他遇到了兩個正在採水果的男孩。其中一個男孩抓過雞蛋，朝著果樹扔過去，雞蛋破了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	On his way to his parents, Vusi met
 two boys picking fruit. One boy
 grabbed the egg from Vusi and shot
@@ -183,7 +184,7 @@ it at a tree. The egg broke.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	福思哭了：“你做了什麼？那個雞蛋是用來做蛋糕的，這個蛋糕是送給我姐姐結婚的禮物。沒了蛋糕，我姐姐會說什麼？”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	“What have you done?” cried Vusi.
 “That egg was for a cake. The cake
 was for my sister’s wedding. What
@@ -219,7 +220,7 @@ wedding cake?”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	男孩們覺得很抱歉，他們不應該嘲弄福思。其中一個男孩說：“我們沒辦法幫你做蛋糕，但是我們這兒有一根柺杖，可以送給你姐姐。”福思帶上了柺杖，繼續上路。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	The boys were sorry for teasing
 Vusi.
 “We can’t help with the cake, but
@@ -256,7 +257,7 @@ Vusi continued on his journey.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	福思在路上碰到了兩個造房子的工人。其中一個工人問他：“我們可以借用一下那根木棍嗎？”但是木棍不是很結實，它斷了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	Along the way he met two men
 building a house. “Can we use that
 strong stick?” asked one.
@@ -292,7 +293,7 @@ for building, and it broke.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	福思哭了：“你做了什麼？那根木棍是摘水果的人給我的，因為他們打碎了用來做蛋糕的雞蛋。那個蛋糕是送給我姐姐結婚的禮物。沒了雞蛋，沒了蛋糕，沒了禮物，我姐姐會說什麼？”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	“What have you done?” cried Vusi.
 “That stick was a gift for my sister.
 The fruit pickers gave me the stick
@@ -331,7 +332,7 @@ sister say?”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	造房子的工人覺得很抱歉，因為他們弄斷了木棍。其中一個工人說：“我們沒辦法幫著做蛋糕，但我這兒有一些茅草，可以送給你姐姐。”福思帶上茅草，繼續上路。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	The builders were sorry for breaking
 the stick.
 “We can’t help with the cake, but
@@ -369,7 +370,7 @@ journey.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	在路上，福思遇到了一個農民和一頭奶牛。奶牛說：“多麼美味的茅草啊！我可以嚐一嚐嗎？”但是茅草太美味了，奶牛把茅草全吃光了！
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	Along the way, Vusi met a farmer
 and a cow. “What delicious thatch,
 can I have a nibble?” asked the cow.
@@ -405,7 +406,7 @@ cow ate it all!
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	福思哭了：“你做了什麼？那些茅草是給我姐姐的禮物。造房子的工人給了我那些茅草，因為他們弄斷了摘水果的人給我的木棍。摘水果的人給了我木棍，因為他們把做蛋糕的雞蛋打破了。那個蛋糕是給我姐姐結婚的禮物。現在雞蛋、蛋糕、禮物都沒了。我的姐姐會說什麼？”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	“What have you done?” cried Vusi.
 “That thatch was a gift for my
 sister. The builders gave me the
@@ -447,7 +448,7 @@ sister say?”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	奶牛很抱歉，因為它太自私了。農民決定讓奶牛跟著福思，作為禮物送給他姐姐。福思繼續上路了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	The cow was sorry she was greedy.
 The farmer agreed that the cow
 could go with Vusi as a gift for his
@@ -482,7 +483,7 @@ sister. And so Vusi carried on.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	但是，到了吃晚飯的時候，奶牛跑回農場了，福思也迷路了。他很晚才到姐姐的婚禮上，客人們已經在吃飯了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	But the cow ran back to the farmer
 at supper time.
 And Vusi got lost on his journey.
@@ -519,7 +520,7 @@ eating.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	福思哭了：“我該怎麼辦？奶牛本來是農民送給我的禮物，因為奶牛吃了建築工人給我的茅草。建築工人給我茅草，因為他們折斷了摘水果的人給我的木棍。摘水果的人給了我木棍，因為他們打破了做蛋糕的雞蛋。那個蛋糕是給我姐姐結婚的禮物。現在，雞蛋沒了，蛋糕沒了，禮物也沒了。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	“What shall I do?” cried Vusi.
 “The cow that ran away was a gift,
 in return for the thatch the builders
@@ -561,7 +562,7 @@ gift.”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l2"><h3>
 	福思的姐姐想了一會兒，她說：“我親愛的兄弟，我不在乎有沒有禮物。我們今天聚在這裡，我就很高興了。穿上你漂亮的衣服，我們一起慶祝吧！”福思就照著她的話做了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level4-txt l3"><h3 dir="rtl">
 	Vusi’s sister thought for a while,
 then she said,
 “Vusi my brother, I don’t really care

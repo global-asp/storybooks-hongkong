@@ -12,7 +12,7 @@
 	<link rel="shortcut icon" href=/storybooks-hongkong/favicon.ico?v=2">
 	<meta name="msapplication-TileColor" content="#da532c">
 	<meta name="theme-color" content="#ffffff">
-	<title>खलाई पौधों से बात करती है - 香港故事書</title>
+	<title>खलाई पौधों से बात करती है। - 香港故事書</title>
 	<meta name="description" content="香港故事書提供一個完全免費開源的教育资源，旨在促進社區語言的識字和讀寫能力，並推廣家庭、學校、社區爲語言學習地點。這40篇譯成各種不同語言的故事來源於非洲故事書項目，按長度和詞彙量分成五個閱讀級別，並爲每一個語言版本錄製語音故事以增加閱讀的樂趣。香港故事書的預設語言爲香港“兩文三語”，即口頭和書寫的粵語、國語、以及英文，除此之外還有在坊間最爲普遍聽到和用到的語言和方言。
 ">
 	<link rel="stylesheet" href="/storybooks-hongkong/css/spectre.min.css">
@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/hi/0089/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -75,7 +75,7 @@
 <div class="columns" id="text01">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/01.jpg"></div>
 	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
-		<h1><span class="def">खलाई पौधों से बात करती है</span>
+		<h1><span class="def">खलाई पौधों से बात करती है।</span>
 			<span class="l1">同植物講嘢嘅卡麗</span>
 			<span class="l2">和植物聊天的卡萊</span>
 			<span class="l3">Khalai talks to plants</span>
@@ -93,6 +93,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/hi">印地語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/hi/level2">Level 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <span class="cover_msg">本故事尚未有語音版。</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -101,7 +102,7 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	ये खलाई है। ये सात साल की है। इसकी भाषा लुबुकुसु में इसके नाम का मतलब है, “एक अच्छी इंसान”।
+	ये खलाई है। ये सात साल की है। इसकी भाषा लुबुकुसु में इसके नाम का मतलब है, “एक अच्छा इंसान”।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -136,7 +137,7 @@ language, Lubukusu.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	खलाई जाग कर संतरे के पेड़ से बात करती है। “कृपया खूब बढ़ो और हमें बहुत सारे पके संतरे दे दो।”
+	खलाई सुबह उठकर संतरे के पेड़ से बात करती है और कहती है कि “ओ संतरे के पेड़ खूब बढ़ो और बड़े होकर हमें बहुत सारे पके हुए संतरे दो।”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -171,7 +172,7 @@ lots of ripe oranges.”
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	खलाई विद्यालय चलकर जाती है। रास्ते में वो घास से बात करती है। “कृपया घास, हरी-भरी हो जाना और सूखना मत।”
+	खलाई पैदल चलकर विद्यालय जाती है और रास्ते में घास से बात करते हुए प्यार से कहती है कि “घास, तुम और हरी-भरी हो जाओ और सूखना मत।”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -206,7 +207,7 @@ and don’t dry up.”
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	खलाई जंगली फूलों के पास से गुजरती है। “कृपया फूलो, खिलते रहना ताकि मैं तुम्हें अपने बालों में लगा सकूँ।”
+	खलाई जंगली फूलों के पास से गुजरती हुई उनसे कहती है कि “प्यारे-प्यारे फूलों, तुम हमेशा यूँ ही खिलते रहना ताकि मैं तुम्हें अपने बालों में लगा सकूँ।”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -241,7 +242,7 @@ hair.”
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	विद्यालय में, खलाई आँगन के बीच में लगे पेड़ से बात करती है। “कृपया पेड़, अपनी शाखाओं को बड़ी करो ताकि हम तुम्हारी छाया के नीचे पढ़ सके।”
+	विद्यालय में, खलाई आँगन के बीच में लगे पेड़ से बात करती है और उससे अनुरोध करती है कि “ओ पेड़, कृपया अपनी शाखाएँ बड़ी करो ताकि हम तुम्हारी छाया तले बैठकर पढ़ सकें।”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -278,7 +279,7 @@ read under your shade.”
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	खलाई अपने विद्यालय के चारों ओर लगी बाड़ से बात करती है। “कृपया ताकतवर बनो और बुरे लोगों को अंदर आने से रोको।”
+	खलाई अपने विद्यालय के चारों ओर लगी बाड़ से बात करती है और कहती है कि तुम बहुत ताकतवर बनो और बुरे लोगों को अंदर आने से रोको।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -313,7 +314,7 @@ from coming in.”
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	जब खलाई विद्यालय से वापस घर आयी, तब वो संतरे के पेड़ से मिली। “क्या तुम्हारे संतरे पक गए है?” खलाई ने पूछा।
+	जब खलाई विद्यालय से वापस घर आयी, तब वो संतरे के पेड़ से मिली। “क्या तुम्हारे संतरे पक गए हैं?” खलाई ने पूछा।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -348,7 +349,7 @@ yet?” asks Khalai.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	“संतरे अभी भी हरे है,” खलाई ने आह भरते हुए कहा। “मैं तुमसे कल मिलूँगी संतरे के पेड़,” खलाई बोली। “शायद तब तुम्हारे पास मेरे लिये एक पका संतरा होगा!”
+	“संतरे अभी भी हरे हैं,” खलाई ने आह भरते हुए कहा। “मैं तुमसे कल मिलूँगी संतरे के पेड़,” खलाई बोली। “शायद तब तुम्हारे पास मेरे लिये एक पका संतरा होगा!”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -404,7 +405,7 @@ orange for me!”
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0210/">टिनगी और उसकी गायें</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0342/">दंड</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0004/">बकरी, कुत्ता और गाय</a></label>
-			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0234/">अंदिस्वा फुटबॉल की सितारा</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0234/">फुटबॉल सितारा अंदिस्वा</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0001/">एक बहुत लम्बा आदमी</a></label>
 	</div>
 </div>

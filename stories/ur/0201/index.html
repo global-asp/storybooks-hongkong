@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/ur/0201/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -78,7 +78,7 @@
 		<h1 dir="rtl"><span class="def">گدھا بچہ</span>
 			<span dir="ltr" class="l1">驢仔</span>
 			<span dir="ltr" class="l2">驢孩子</span>
-			<span dir="ltr" class="l3">Donkey Child</span>
+			<span class="l3">Donkey Child</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
@@ -95,6 +95,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/ur">烏都語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/ur/level3">Level 3</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ur/0201/ur-0201_donkey.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -112,7 +113,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	有個女孩最先發現了遠處有個奇怪的身影。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	It was a little girl who first saw the mysterious shape in the distance.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -144,7 +145,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	那個身影越靠越近，她看清楚了，那是一個快生孩子的婦女。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	As the shape moved closer, she saw that it was a heavily pregnant woman.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -176,7 +177,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	女孩有點兒害羞，但她還是勇敢地走上前去。和女孩隨行的人們說：“我們必須和她呆在一起，我們必須保護她和她的孩子。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Shy but brave, the little girl moved nearer to the woman.
 
 “We must keep her with us,” the little girl’s people decided. “We’ll keep her and her child safe.”
@@ -210,7 +211,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	孩子很快就要降生了。“用力啊！”“快拿毯子來！”“水！”“再用點力！”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	The child was soon on its way.
 
 “Push!”
@@ -250,7 +251,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	當他們看到孩子時，所有人都嚇了一跳，“一頭驢？”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	But when they saw the baby, everyone jumped back in shock.
 
 “A donkey?!”
@@ -284,7 +285,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	大家七嘴八舌吵起來。一些人說：“我們說過要保護母親和孩子的，我們必須這樣做。”但是還有一些人反駁說：“但是他們會給我們帶來厄運。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Everyone began to argue.
 
 “We said we would keep mother and child safe, and that’s what we’ll do,” said some.
@@ -320,7 +321,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	婦女發現自己又孤零零一人了。她不知道該拿這個奇怪的孩子怎麼辦，她也不知道自己該怎麼辦。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	And so the woman found herself alone again.
 
 She wondered what to do with this awkward child.
@@ -356,7 +357,7 @@ She wondered what to do with herself.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	最後，她決定接受這個孩子，做他的媽媽。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	But finally she had to accept that he was her child and she was his mother.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -388,7 +389,7 @@ She wondered what to do with herself.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	如果這個孩子一直這般大小，不長大的話，一切都會變得不一樣。但是這個驢孩子越長越大，現在他再也不能趴在媽媽的背上。無論他多麼努力，他始終不能像人類一樣。他的媽媽累了，放棄了。有時候，她讓他做一些動物會做的工作。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Now, if the child had stayed that same, small size, everything might have been different. But the donkey child grew and grew until he could no longer fit on his mother’s back.
 
 And no matter how hard he tried, he could not behave like a human being. His mother was often tired and frustrated. Sometimes she made him do work meant for animals.
@@ -422,7 +423,7 @@ And no matter how hard he tried, he could not behave like a human being. His mot
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	驢孩子感到迷茫，也很生氣。他這個也不能做，那個也不能做。他不能這樣，也不能那樣。有一天，他太生氣了，一腳把他的媽媽踹到地上。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Confusion and anger built up inside Donkey. He couldn’t do this and he couldn’t do that. He couldn’t be like this and he couldn’t be like that.
 
 He became so angry that, one day, he kicked his mother to the ground.
@@ -456,7 +457,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	驢孩子羞愧極了，他逃跑了，跑得越遠越好。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Donkey was filled with shame. He started to run away as far and fast as he could.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -488,7 +489,7 @@ He became so angry that, one day, he kicked his mother to the ground.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	當他停下來的時候，天已經黑了，驢孩子迷路了。他在黑暗裡哼哼，“咴咴”，黑暗中傳來了回聲，“咴咴”。他孤零零的一個人，卷成了一團，心中充滿煩惱，沉沉地睡去。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	By the time he stopped running, it was night, and Donkey was lost.
 
 “Hee haw?” he whispered to the darkness.
@@ -526,7 +527,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	驢孩子醒了，他發現有個老人低頭盯著他。他看著老人的眼睛，感覺到了一絲希望。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Donkey woke up to find a strange old man staring down at him. He looked into the old man’s eyes and started to feel a twinkle of hope.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -558,7 +559,7 @@ Curling himself into a tight ball, he fell into a deep and troubled sleep.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	驢孩子和老人住在一起，老人教會他很多生存的本領。驢孩子認真地聽著，學得很快。老人也學了很多。他們互相幫助，遇到開心的事情就一起哈哈大笑。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Donkey went to stay with the old man, who taught him many different ways to survive.
 
 Donkey listened and learned, and so did the old man. They helped each other, and they laughed together.
@@ -592,7 +593,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	一天早上，老人讓驢孩子帶他到山頂。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	One morning, the old man asked Donkey to carry him to the top of a mountain.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -624,7 +625,7 @@ Donkey listened and learned, and so did the old man. They helped each other, and
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	他們登上山頂，環繞在雲霧中，睡著了。驢孩子夢到他的媽媽生病了，正在呼喚他，然後他就醒了......
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	High up amongst the clouds they fell asleep.
 
 Donkey dreamed that his mother was sick and calling to him.
@@ -660,7 +661,7 @@ And when he woke up…
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	......雲霧消失了，他的朋友—那個老人—也消失了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	… the clouds had disappeared along with his friend, the old man.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -692,7 +693,7 @@ And when he woke up…
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	驢孩子終於知道要做什麼了。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Donkey finally knew what to do.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -724,7 +725,7 @@ And when he woke up…
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	驢孩子找到了他的媽媽，她孤零零一個人，正在為走失的孩子傷心。他們互相打量了很久，然後緊緊地抱在了一起。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	Donkey found his mother, alone and mourning her lost child. They stared at each other for a long time.
 
 And then hugged each other very hard.
@@ -758,7 +759,7 @@ And then hugged each other very hard.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l2"><h3>
 	驢孩子和媽媽住在一起，慢慢長大，學會了如何共同生活。漸漸的，其他的家庭也搬到他們附近，住了下來。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l3"><h3 dir="rtl">
 	The donkey child and his mother have grown together and found many ways of living side by side.
 
 Slowly, all around them, other families have started to settle.

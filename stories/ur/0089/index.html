@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/ur/0089/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -78,7 +78,7 @@
 		<h1 dir="rtl"><span class="def">کھلائی پودوں سے بات کرتی ہے</span>
 			<span dir="ltr" class="l1">同植物講嘢嘅卡麗</span>
 			<span dir="ltr" class="l2">和植物聊天的卡萊</span>
-			<span dir="ltr" class="l3">Khalai talks to plants</span>
+			<span class="l3">Khalai talks to plants</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
@@ -95,6 +95,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/ur">烏都語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/ur/level2">Level 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ur/0089/ur-0089_khalai.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -112,7 +113,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	這是卡萊。她今年七歲。在肯尼亞當地方言裡，這個名字是“美好事物”的意思。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	This is Khalai.
 She is seven years old.
 Her name means ‘the
@@ -148,7 +149,7 @@ language, Lubukusu.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	卡萊早上醒來，跟橙子樹說：“橙子樹啊橙子樹，快點長大吧，給我們結好多又大又甜的橙子！”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Khalai wakes up and
 talks to the orange tree.
 “Please orange tree,
@@ -184,7 +185,7 @@ lots of ripe oranges.”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	在卡萊走路去上學的路上，她對草地說：“草地啊草地，你一定要長得綠油油的，別乾枯了。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Khalai walks to school.
 On the way she talks to
 the grass. “Please
@@ -220,7 +221,7 @@ and don’t dry up.”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	卡萊路過了野花，她對野花說：“野花啊野花，你們盡情地開放吧，這樣我可以把你們夾在我的頭髮裡。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Khalai passes wild
 flowers. “Please
 flowers, keep blooming
@@ -256,7 +257,7 @@ hair.”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	在學校，卡萊對操場中間的樹說：“小樹啊小樹，快點長出枝葉吧，這樣我們就可以在樹蔭裡讀書了。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	At school, Khalai talks
 to the tree in the
 middle of the
@@ -294,7 +295,7 @@ read under your shade.”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	卡萊還對學校附近的灌木叢說：“灌木啊灌木，你們一定要長得壯壯的，這樣壞人就進不了學校了。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Khalai talks to the
 hedge around her school.
 “Please grow strong
@@ -330,7 +331,7 @@ from coming in.”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	當卡萊從學校回到家裡，她又去看了看橙子樹，問它：“你結橙子了嗎？”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	When Khalai returns
 home from school, she
 visits the orange tree.
@@ -366,7 +367,7 @@ yet?” asks Khalai.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	卡萊歎了一口氣：“橙子還是綠色的，我明天再來看看你吧！或許到了明天你就會給我一隻又大又甜的橙子了。”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	“The oranges are still
 green,” sighs Khalai.
 “I will see you tomorrow

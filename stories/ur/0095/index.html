@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/ur/0095/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -78,7 +78,7 @@
 		<h1 dir="rtl"><span class="def">زاما عظیم ہے!</span>
 			<span dir="ltr" class="l1">贊瑪好勁！</span>
 			<span dir="ltr" class="l2">贊瑪很棒！</span>
-			<span dir="ltr" class="l3">Zama is great!</span>
+			<span class="l3">Zama is great!</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
@@ -95,6 +95,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/ur">烏都語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/ur/level2">Level 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ur/0095/ur-0095_zama.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -112,7 +113,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	我弟弟睡過頭了。我很早起床，因為我很棒！
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	My little brother sleeps
 very late.
 I wake early, because I
@@ -147,7 +148,7 @@ am great!
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	是我讓陽光透進來。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	I am the one who lets in
 the sun.
 	</h3></div>
@@ -180,7 +181,7 @@ the sun.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	媽媽說：“你是我的晨星”。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	“You’re my morning
 star,” says Ma.
 	</h3></div>
@@ -213,7 +214,7 @@ star,” says Ma.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	我自己洗澡。我不需要幫忙。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	I wash myself, I don’t
 need any help.
 	</h3></div>
@@ -246,7 +247,7 @@ need any help.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	冷冷的水和臭臭的藍色肥皂對我來說不算大事。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	I can cope with cold
 water and blue smelly
 soap.
@@ -280,7 +281,7 @@ soap.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	媽媽提醒我：“別忘了刷牙。”我回答：“怎麼可能，我不會忘記的！”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Ma reminds, “Don’t
 forget teeth.”
 I reply, “Never, not
@@ -315,7 +316,7 @@ me!”
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	洗好了以後，我跟爺爺和姑媽打個招呼，向他們問好。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	After washing, I greet
 Grandpa and Auntie,
 and wish them a good
@@ -350,7 +351,7 @@ day.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	然後我自己穿好衣服。“媽，我已經長大了！”
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	Then I dress myself,
 “I’m big now Ma,” I say.
 	</h3></div>
@@ -383,7 +384,7 @@ day.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	我會自己扣好衣釦和鞋子。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	I can close my buttons
 and buckle my shoes.
 	</h3></div>
@@ -416,7 +417,7 @@ and buckle my shoes.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	在上學的路上我跟弟弟說學校的所有消息。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	And I make sure little
 brother knows all the
 school news.
@@ -450,7 +451,7 @@ school news.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	上課的時候我認真學習。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	In class I do my best in
 every way.
 	</h3></div>
@@ -483,7 +484,7 @@ every way.
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l2"><h3>
 	我每天做這幾件好事。可是我最喜歡做的是玩玩玩！
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3 dir="rtl">
 	I do all these good
 things every day.
 But the thing I like

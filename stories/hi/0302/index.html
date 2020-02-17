@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/hi/0302/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -93,6 +93,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/hi">印地語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/hi/level1">Level 1</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <span class="cover_msg">本故事尚未有語音版。</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -361,8 +362,8 @@
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>讀多啲<a href="/storybooks-hongkong/stories/hi/level1">1級</a>故事:</h5>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0112/">मेरा शरीर</a></label>
-			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0009/">मेरी बिल्ली कहा है?</a></label>
-			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0327/">जानवरों को गिनना</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0009/">मेरी बिल्ली कहाँ है?</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0327/">जानवरों की गिनती </a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0067/">खाना पकाना</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0129/">आलसी छोटा भाई</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0030/">भावनाएँ</a></label>
@@ -373,7 +374,7 @@
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0156/">भूखा मगरमच्छ</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0120/">बाल</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0231/">मौसम की किताब</a></label>
-			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0087/">मैं पढ़ना चाहता हूँ</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0087/">मुझे पढ़ना पसंद है </a></label>
 	</div>
 </div>
 <div>

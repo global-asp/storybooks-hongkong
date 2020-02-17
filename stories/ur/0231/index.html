@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/ur/0231/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -78,7 +78,7 @@
 		<h1 dir="rtl"><span class="def">موسم کی کتاب</span>
 			<span dir="ltr" class="l1">天氣書</span>
 			<span dir="ltr" class="l2">氣象書</span>
-			<span dir="ltr" class="l3">Weather book</span>
+			<span class="l3">Weather book</span>
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
@@ -95,6 +95,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/ur">烏都語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/ur/level1">Level 1</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ur/0231/ur-0231_weather.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -112,7 +113,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	天氣很乾燥。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	It is dry.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -144,7 +145,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	太陽很熱。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	The sun is hot.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -176,7 +177,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	吹大風。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	It is windy.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -208,7 +209,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	天氣多雲。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	It is cloudy.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -240,7 +241,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	天氣冷。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	It is cold.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -272,7 +273,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	下雨。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	It is raining.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -304,7 +305,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	打雷。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	There is thunder.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
@@ -336,7 +337,7 @@
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l2"><h3>
 	我看到彩虹。
 	</h3></div>
-	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3>
+	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level1-txt l3"><h3 dir="rtl">
 	I see a rainbow.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">

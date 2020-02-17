@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/hi/0315/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -93,6 +93,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/hi">印地語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/hi/level3">Level 3</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <span class="cover_msg">本故事尚未有語音版。</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -101,7 +102,7 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	साकीमा अपने परिवार और अपनी चार साल की बहन के साथ रहता था। वे एक अमीर आदमी की ज़मीन पर रहते थे। उनका घास फूस का घर पेड़ों की कतार के आखिर में था।
+	साकीमा अपने माता-पिता और अपनी चार साल की बहन के साथ रहता था। वे एक अमीर आदमी की ज़मीन पर रहते थे। उनके घास फूस का घर पेड़ों की कतार के आखिर में था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -202,7 +203,7 @@ For example, he could sit with older members of the village and discuss importan
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	साकीमा के माता पिता अमीर आदमी के घर पर काम करते थे। वह घर से जल्दी चले जाते और देर से घर लौटते। साकीमा को उसकी बहन के साथ छोड़कर जाते थे।
+	साकीमा के माता-पिता अमीर आदमी के घर पर काम करते थे। वह घर से जल्दी चले जाते और देर से घर लौटते। वे साकीमा को उसकी छोटी बहन के साथ छोड़कर जाते थे।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -237,7 +238,7 @@ Sakima was left with his little sister.
 <div id="text06" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/06.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	साकीमा को गाना गाना पसंद था। एक दिन उसकी माँ ने उससे पूछा “तुमने कहाँ से यह गाने सीखे, साकीमा?”
+	साकीमा को गाना गाना पसंद था। एक दिन उसकी माँ ने उससे पूछा “तुमने ये गाने कहाँ से सीखे, साकीमा?”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -270,7 +271,7 @@ One day his mother asked him, “Where do you learn these songs from, Sakima?”
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	साकीमा ने जवाब दिया “ये ऐसे ही आते हैं, माँ। मैं इनको अपने मन में सुनता हूँ जब मैं गाता हूँ”
+	साकीमा ने जवाब दिया “ये ऐसे ही आते हैं, माँ। मैं इनको अपने मन में सुनता हूँ और फिर इन्हें गाता हूँ”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -336,7 +337,7 @@ She would sway to the soothing tune.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	“क्या तुम इसे फिर से गा सहते हो और फिर,” उसकी बहन ने उसे प्रार्थना की। साकीमा मान गया और फिर से गया और फिर ।
+	“क्या तुम इसे बार-बार गा सकते हो,” उसकी बहन उससे प्रार्थना करती। साकीमा मान जाता और बार-बार उसके लिए गाता।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -402,7 +403,7 @@ Sakima knew that there was something wrong.
 <div id="text11" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/11.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	“क्या हुआ, माँ, पिताजी?” साकीमा ने पूछा। साकीमा को पता था कि अमीर आदमी का लड़का खो गया है। वह आदमी बहुत ही उदास और अकेला था।
+	“क्या हुआ, माँ, पिताजी?” साकीमा ने पूछा। साकीमा को पता चला कि अमीर आदमी का लड़का खो गया है। वह आदमी बहुत ही उदास और अकेला था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -437,7 +438,7 @@ The man was very sad and lonely.
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	“मैं उनके लिए गा सकता हूँ। वे फिर से खुश हो जायेंगे, “साकीमा ने अपने माता पिता से कहा। पर उसके माता पिता ने मना कर दिया। “वे बहुत अमीर है। तुम केवल एक अंधे लड़के हो। क्या तुम सोचते हो कि तुम्हारा गाना उनकी मदद करेगा?”
+	“मैं उनके लिए गा सकता हूँ। वे फिर से खुश हो जायेंगे,” साकीमा ने अपने माता-पिता से कहा। पर उसके माता पिता ने मना कर दिया। “वे बहुत अमीर है। तुम केवल एक अंधे लड़के हो। क्या तुम सोचते हो कि तुम्हारा गाना उनकी मदद करेगा?”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -472,7 +473,7 @@ But his parents dismissed him.
 <div id="text13" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/13.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	जो भी हो, साकीमा ने हार नहीं मानी। उसकी छोटी बहन ने उसका साथ दिया। वह बोली, “साकीमा के गाने मुझे शांत करते है जब मैं भूखी होती हूँ। वे अमीर आदमी को भी शांति देंगे।”
+	जो भी हो, साकीमा ने हार नहीं मानी। उसकी छोटी बहन ने उसका साथ दिया। वह बोली, “जब मैं भूखी होती हूँ तो साकीमा का गाना सुनकर मैं बहुत संतुष्ट और खुश महसूस करती हूँ। वे अमीर आदमी को भी सुकून देंगे।”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -507,7 +508,7 @@ She said, “Sakima’s songs soothe me when I am hungry. They will soothe the r
 <div id="text14" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/14.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	उसी दिन, साकीमा ने अपनी बहन से कहा कि उसे अमीर आदमी के घर ले चले।
+	अगले दिन, साकीमा ने अपनी छोटी बहन से कहा कि वह उसे अमीर आदमी के घर ले चले।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -538,7 +539,7 @@ She said, “Sakima’s songs soothe me when I am hungry. They will soothe the r
 <div id="text15" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/15.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	वह एक बड़ी सी खिड़की के नीचे खड़ा हो गया और उसने अपना पसंदीदा गाना गाना शुरू कर दिया। धीरे से, अमीर आदमी का सिर बड़ी सी खिड़की से दिखने लगा
+	वह एक बड़ी खिड़की के नीचे खड़ा हो गया और उसने अपना पसंदीदा गाना गाना शुरू कर दिया। थोड़ी ही देर में, वह बड़ा आदमी बड़ी खिड़की के बाहर झाँक कर देखने लगा . 
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -571,7 +572,7 @@ Slowly, the head of the rich man began to show through the big window.
 <div id="text16" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/16.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	कर्मचारियों ने अपना काम रोका जो वो कर रहे थे। उन्होंने साकीमा का सुंदर गाना सुना। लेकिन एक आदमी बोला, “कोई भी मालिक को दिलासा नहीं दे सकता। यह अंधा लड़का क्या सोचता है कि उनको दिलासा देगा?”
+	साकीमा का मधुर गायन सुनकर सभी कर्मचारियों ने अपना काम बीच में ही रोक दिया। लेकिन एक आदमी बोला, “अब तक कोई भी मालिक को दिलासा नहीं दे सका। क्या यह अंधा लड़का यह सोचता है कि वह उनको दिलासा दे पायेगा?”
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -604,7 +605,7 @@ But one man said, “Nobody has been able to console the boss. Does this blind b
 <div id="text17" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/17.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	साकीमा ने अपना गाना खत्म किया और जाने के लिए मुड़ा। लेकिन अमीर आदमी बाहर निकल और बोला, “कृपया दोबारा गाओ।”
+	साकीमा ने अपना गाना खत्म किया और जाने के लिए मुड़ा। लेकिन अमीर आदमी बाहर निकल और बोला, “कृपया दोबारा गाओ”।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -637,7 +638,7 @@ But the rich man rushed out and said, “Please sing again.”
 <div id="text18" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/18.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	उसी समय, दो आदमी पालकी ले कर आए। उन्हें अमीर आदमी का बेटा घायल और सड़क के किनारे पड़ा मिला।
+	उसी समय, दो आदमी एक पालकी ले कर आए। उन्हें अमीर आदमी का बेटा घायल अवस्था में सड़क के किनारे पड़ा मिला था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -670,7 +671,7 @@ They had found the rich man’s son beaten up and left on the side of the road.
 <div id="text19" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0315/19.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt def"><h3>
-	अमीर आदमी बहुत खुश था अपने लड़के को देख कर। दिलासा देने के लिए उसने साकीमा को पुरस्कार दिया। वह अपने बेटे और साकीमा को ले कर अस्पताल गया तब साकीमा फिर से देख सका।
+	अमीर आदमी अपने लड़के को दोबारा देख कर बहुत खुश हो गया। उसने साकीमा को दिलासा देने के लिए पुरस्कार दिया। वह अपने बेटे और साकीमा को अस्पताल ले गया ताकि साकीमा फिर से देख सके।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level3-txt l1"><h3>
@@ -716,7 +717,7 @@ He took his son and Sakima to hospital so Sakima could regain his sight.
 	</div>
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
 		<h5>讀多啲<a href="/storybooks-hongkong/stories/hi/level3">3級</a>故事:</h5>
-			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0110/">एक छोटा बीज: वनगारी माथाई की कहानी</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0110/">एक छोटा बीज: वंगारी मथाई की कहानी</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0066/">नोज़िबेले और उसके तीन बाल</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0141/">मुर्गी और कनखजूरा</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0201/">गधा बच्चा</a></label>

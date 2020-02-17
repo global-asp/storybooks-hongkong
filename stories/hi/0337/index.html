@@ -20,7 +20,7 @@
 	<link rel="stylesheet" href="/storybooks-hongkong/css/fontello.min.css">
 	<link rel="canonical" href="https://global-asp.github.io//storybooks-hongkong/stories/hi/0337/">
 	<link rel="alternate" type="application/rss+xml" title="香港故事書" href="/storybooks-hongkong">
-	<script src="/storybooks-hongkong/js/sbc.js"></script>
+	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
 
@@ -93,6 +93,7 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/hi">印地語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/hi/level2">Level 2</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <span class="cover_msg">本故事尚未有語音版。</span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度: "><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度: " style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: : 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="https://dohliam.github.io/elegant-circles/svg/play.svg" alt="自動唸故事 (測試中)" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
@@ -101,7 +102,7 @@
 <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0337/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	एक समय की बात है, एक खुशहाल परिवार रहता था।
+	एक समय की बात है, एक बहुत ही खुशहाल परिवार था।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -134,7 +135,7 @@ family.
 <div id="text03" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0337/03.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	वे कभी एक दूसरे से नहीं लड़ते थे। वे घर पर और खेतों में अपने माता पिता की मदद करते थे
+	वे कभी एक दूसरे से नहीं लड़ते थे। वे घर पर और खेतों में अपने माता-पिता की मदद करते थे।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -201,7 +202,7 @@ fire.
 <div id="text05" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0337/05.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	वे अपना सारा काम रात में करते थे, क्योंकि वे मोम से बने थे।
+	वे अपना सारा काम रात में करते थे, क्योंकि वे मोम से बने हुए थे।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -268,7 +269,7 @@ sunlight.
 <div id="text07" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0337/07.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	एक दिन उसकी जाने की इच्छा ज्यादा हुई तो उसके भाइयों ने उसे चेतावनी दी…
+	एक दिन उसकी जाने की बहुत ज़्यादा इच्छा हुई तो उसके भाइयों ने उसे चेतावनी दी…
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -334,7 +335,7 @@ sun.
 <div id="text09" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0337/09.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	अपने भाइयों को पिघलता देख मोम के बच्चे बहुत उदास हो गए।
+	अपने भाई को पिघलता देख मोम के बच्चे बहुत उदास हो गए।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -367,7 +368,7 @@ brother melting away.
 <div id="text10" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0337/10.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	पर उन्होंने एक योजना बनाई। उन्होंने उस मोम को एक चिड़िया का आकार दिया।
+	पर उन्होंने एक योजना बनाई। उन्होंने उस मोम को एक चिड़िया का आकार दे दिया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -434,7 +435,7 @@ mountain.
 <div id="text12" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0337/12.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	और जब सूरज निकला, वह सुबह की रोशनी में गाता हुआ उड़ गया।
+	और जैसे ही सूरज निकला, वह सुबह की रोशनी में गाता हुआ उड़ गया।
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -480,13 +481,13 @@ the morning light.
 		<h5>讀多啲<a href="/storybooks-hongkong/stories/hi/level2">2級</a>故事:</h5>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0111/">दरियाई घोड़ों के बाल क्यों नहीं होते</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0095/">ज़ामा बहुत अच्छी है</a></label>
-			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0089/">खलाई पौधों से बात करती है</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0089/">खलाई पौधों से बात करती है।</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0027/">निर्णय</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0296/">टॉम केलेवाला</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0210/">टिनगी और उसकी गायें</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0342/">दंड</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0004/">बकरी, कुत्ता और गाय</a></label>
-			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0234/">अंदिस्वा फुटबॉल की सितारा</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0234/">फुटबॉल सितारा अंदिस्वा</a></label>
 			<label class="chip"><a href="/storybooks-hongkong/stories/hi/0001/">एक बहुत लम्बा आदमी</a></label>
 	</div>
 </div>
