@@ -23,9 +23,7 @@
 	<script src="/storybooks-hongkong/js/sbc.min.js"></script>
 </head>
 
-
   <body>
-
 
     <div class="container">
 
@@ -49,9 +47,9 @@
 	</section>
 </header>
 
-        <div class="float-"><a class="btn btn-lg" href="https://globalstorybooks.net/media/sbhk/pdf/tl/tl-0327_counting.pdf" target="_blank">下載 PDF</a></div>
+        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/media/sbhk/pdf/tl/tl-0327_counting.pdf" target="_blank">下載 PDF</a></div>
 
-<div class="float-">
+<div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
 		<option selected="" disabled="">其他語言</option>
 		<option value="/storybooks-hongkong/stories/yue/0327">粵語</option>
@@ -69,6 +67,38 @@
 		<option value="/storybooks-hongkong/stories/ne/0327">尼泊爾語</option>
 	</select>
 </div>
+
+        <a class="btn btn-lg" href="/storybooks-hongkong/stories/tl">返回故事列表</a><br><br>
+
+<div class="columns" id="text01">
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/01.jpg"></div>
+	<div class=" column col-7 col-lg-12 col-md-12 col-sm-12">
+		<h1><span class="def">Pagbibilang ng mga Hayop</span>
+			<span class="l1">數動物</span>
+			<span class="l2">數數動物</span>
+			<span class="l3">Counting animals</span>
+		</h1>
+		<div class="btn-group cover-buttons">
+			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/tl/0327/mp3/01.mp3"></audio>
+			<button onclick="switchlang('菲,粵','粵,國,英,菲')" class="btn btn-lg lang-primary" title="在菲律賓語與粵語間切換">粵</button>
+			<button onclick="switchlang('菲,國','粵,國,英,菲')" class="btn btn-lg lang-secondary" title="在菲律賓語與國語間切換">國</button>
+			<button onclick="switchlang('菲,英','粵,國,英,菲')" class="btn btn-lg lang-tertiary" title="在菲律賓語與英語間切換">英</button>
+		</div>
+		<h3><span class="tooltip tooltip-right" data-tooltip="作者"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/pencil.svg" alt="作者"></span> Zanele Buthelezi, Thembani Dladla, Clare Verbeek</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="插圖"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/art.svg" alt="插圖"></span> Rob Owen</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="譯文"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/global.svg" alt="譯文"></span> La Trinidad Mina</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="配音"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/megaphone.svg" alt="配音"></span> La Trinidad Mina</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/tl">菲律賓語</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/tl/level1">1級別</a></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/tl/0327/tl-0327_counting.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/play.svg" alt="自動唸故事" style="cursor:pointer" onclick="autoplay()"></span></h3>
+	</div>
+</div>
+
+<hr>
 
         <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0327/02.jpg"></div>
@@ -330,6 +360,43 @@
 </div>
 <hr>
 
+
+        <div id="colophon" class="columns">
+	<div class="column col-7 col-lg-12 col-md-12 col-sm-12">
+		<h5><span class="colophon-heading">作者:</span> Zanele Buthelezi, Thembani Dladla, Clare Verbeek</h5>
+		<h5><span class="colophon-heading">插圖:</span> Rob Owen</h5>
+		<h5><span class="colophon-heading">譯文:</span> La Trinidad Mina</h5>
+		<h5><span class="colophon-heading">配音:</span> La Trinidad Mina</h5>
+		<h5><span class="colophon-heading">語言:</span> <a href="/storybooks-hongkong/stories/tl">菲律賓語</a></h5>
+		<h5><span class="colophon-heading">級別:</span> <a href="/storybooks-hongkong/stories/tl/level1">1級別</a></h5>
+		<h5><span class="colophon-heading">出處:</span> 原文來自<a href="https://africanstorybook.org/">非洲故事書</a>的<a href="https://africanstorybook.org/reader.php?id=9671" target="_blank">Counting animals</a></h5>
+
+		<div><a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.zh" target="_blank"><img alt="共享創意授權條款" style="border-width:0" src="https://i.creativecommons.org/l/by/3.0/88x31.png" /></a><br />本著作係採用<a rel="license" href="https://creativecommons.org/licenses/by/3.0/deed.zh" target="_blank">共享創意 署名 3.0 未本地化版本</a>授權條款授權。</div>
+
+	</div>
+	<div class="column col-5 col-lg-12 col-md-12 col-sm-12">
+		<h5>讀多啲<a href="/storybooks-hongkong/stories/tl/level1">1級</a>故事:</h5>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0112/">Ang aking katawan</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0009/">Nasaan ang pusa ko?</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0067/">Pagluluto</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0129/">Si bunsong tamad</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0030/">Mga Damdamin</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0002/">Pagmasdan ang mga hayop</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0003/">Ano isusuot ko sa iskul?</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0271/">Dalawa</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0008/">Anong ginagawa mo?</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0156/">Ang buwayang gutom</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0120/">Buhok</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0231/">Iba’t ibang panahon</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0302/">Apoy</a></label>
+			<label class="chip"><a href="/storybooks-hongkong/stories/tl/0087/">Mahilig akong magbasa!</a></label>
+	</div>
+</div>
+<div>
+<h5>選項</h5>
+	<a class="btn btn-lg" href="/storybooks-hongkong/stories/tl" class="button">返回故事列表</a> <a class="btn btn-lg" href="https://globalstorybooks.net/media/sbhk/pdf/tl/tl-0327_counting.pdf" target="_blank">下載 PDF</a>
+<br><br>
+</div>
 
 
     </div>
