@@ -47,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/media/sbhk/pdf/vi/vi-0027_decision.pdf" target="_blank">下載 PDF</a></div>
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">下載選項</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -93,6 +93,51 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <span class="cover_msg">本故事尚未有語音版。</span></h3>
 
 	</div>
+</div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="關閉" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="關閉" onclick="pdfdl()"></a>
+      <div class="modal-title h5">下載選項</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>普通 PDF (全頁)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/media/sbhk/pdf/vi/vi-0027_decision.pdf" target="_blank">普通 PDF (單語)<br><center><img src="/storybooks-hongkong/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/wordless/0027_decision-wordless.pdf" target="_blank">無字 PDF (横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless/vi/vi-0027_decision-imageless.pdf" target="_blank">無圖 PDF (單語)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>雙語 PDF</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual/vi-yue/0027_decision-bilingual_vi-yue.pdf" target="_blank">雙語 PDF (越南語-粵語, landscape)<br><center><img src="/storybooks-hongkong/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual/vi-zh/0027_decision-bilingual_vi-zh.pdf" target="_blank">雙語 PDF (越南語-國語, landscape)<br><center><img src="/storybooks-hongkong/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual/vi-en/0027_decision-bilingual_vi-en.pdf" target="_blank">雙語 PDF (越南語-英語, landscape)<br><center><img src="/storybooks-hongkong/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual/vi-yue/0027_decision-imageless-bilingual_vi-yue.pdf" target="_blank">雙語無圖 PDF (越南語-粵語, 横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual/vi-zh/0027_decision-imageless-bilingual_vi-zh.pdf" target="_blank">雙語無圖 PDF (越南語-國語, 横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual/vi-en/0027_decision-imageless-bilingual_vi-en.pdf" target="_blank">雙語無圖 PDF (越南語-英語, 横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>小冊子 PDF (適合打印)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/booklet/vi/vi-0027_decision-booklet.pdf" target="_blank">小冊子 PDF (單語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual-booklet/vi-yue/0027_decision-bilingual_vi-yue-booklet.pdf" target="_blank">雙語小冊子 PDF (越南語-粵語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual-booklet/vi-zh/0027_decision-bilingual_vi-zh-booklet.pdf" target="_blank">雙語小冊子 PDF (越南語-國語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual-booklet/vi-en/0027_decision-bilingual_vi-en-booklet.pdf" target="_blank">雙語小冊子 PDF (越南語-英語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/wordless-booklet/0027_decision-wordless-booklet.pdf" target="_blank">無字小冊子<br><center><img src="/storybooks-hongkong/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-booklet/vi/vi-0027_decision-imageless-booklet.pdf" target="_blank">無圖小冊子 (單語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual-booklet/vi-yue/0027_decision-imageless-bilingual_vi-yue-booklet.pdf" target="_blank">雙語無圖小冊子 (越南語-粵語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual-booklet/vi-zh/0027_decision-imageless-bilingual_vi-zh-booklet.pdf" target="_blank">雙語無圖小冊子 (越南語-國語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual-booklet/vi-en/0027_decision-imageless-bilingual_vi-en-booklet.pdf" target="_blank">雙語無圖小冊子 (越南語-英語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">關閉</a>
+    </div>
+  </div>
 </div>
 
 <hr>

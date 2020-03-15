@@ -47,7 +47,7 @@
 	</section>
 </header>
 
-        <div class="float-right"><a class="btn btn-lg" href="https://globalstorybooks.net/media/sbhk/pdf/pt/pt-0342_punishment.pdf" target="_blank">下載 PDF</a></div>
+        <div class="float-right"><button class="btn btn-lg" onclick="pdfdl()">下載選項</button></div>
 
 <div class="float-right">
 	<select class="btn btn-lg" onchange="window.location=this.value" accesskey="l">
@@ -96,6 +96,51 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/play.svg" alt="自動唸故事" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
+</div>
+<div class="modal" id="modal-pdf">
+  <a href="#close" class="modal-overlay" aria-label="關閉" onclick="pdfdl()"></a>
+  <div class="modal-container">
+    <div class="modal-header">
+      <a href="#close" class="btn btn-clear float-right" aria-label="關閉" onclick="pdfdl()"></a>
+      <div class="modal-title h5">下載選項</div>
+    </div>
+    <div class="modal-body">
+      <div class="content">
+        <h4>普通 PDF (全頁)</h4>
+        <ul>
+          <li><strong><a href="https://globalstorybooks.net/media/sbhk/pdf/pt/pt-0342_punishment.pdf" target="_blank">普通 PDF (單語)<br><center><img src="/storybooks-hongkong/css/editions/landscape-mono.svg" width="100"></center></a></strong></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/wordless/0342_punishment-wordless.pdf" target="_blank">無字 PDF (横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless/pt/pt-0342_punishment-imageless.pdf" target="_blank">無圖 PDF (單語)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>雙語 PDF</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual/pt-yue/0342_punishment-bilingual_pt-yue.pdf" target="_blank">雙語 PDF (葡萄牙語-粵語, landscape)<br><center><img src="/storybooks-hongkong/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual/pt-zh/0342_punishment-bilingual_pt-zh.pdf" target="_blank">雙語 PDF (葡萄牙語-國語, landscape)<br><center><img src="/storybooks-hongkong/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual/pt-en/0342_punishment-bilingual_pt-en.pdf" target="_blank">雙語 PDF (葡萄牙語-英語, landscape)<br><center><img src="/storybooks-hongkong/css/editions/landscape-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual/pt-yue/0342_punishment-imageless-bilingual_pt-yue.pdf" target="_blank">雙語無圖 PDF (葡萄牙語-粵語, 横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual/pt-zh/0342_punishment-imageless-bilingual_pt-zh.pdf" target="_blank">雙語無圖 PDF (葡萄牙語-國語, 横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual/pt-en/0342_punishment-imageless-bilingual_pt-en.pdf" target="_blank">雙語無圖 PDF (葡萄牙語-英語, 横向)<br><center><img src="/storybooks-hongkong/css/editions/landscape-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+
+        <h4>小冊子 PDF (適合打印)</h4>
+        <ul>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/booklet/pt/pt-0342_punishment-booklet.pdf" target="_blank">小冊子 PDF (單語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-mono.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual-booklet/pt-yue/0342_punishment-bilingual_pt-yue-booklet.pdf" target="_blank">雙語小冊子 PDF (葡萄牙語-粵語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual-booklet/pt-zh/0342_punishment-bilingual_pt-zh-booklet.pdf" target="_blank">雙語小冊子 PDF (葡萄牙語-國語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/bilingual-booklet/pt-en/0342_punishment-bilingual_pt-en-booklet.pdf" target="_blank">雙語小冊子 PDF (葡萄牙語-英語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/wordless-booklet/0342_punishment-wordless-booklet.pdf" target="_blank">無字小冊子<br><center><img src="/storybooks-hongkong/css/editions/booklet-wordless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-booklet/pt/pt-0342_punishment-imageless-booklet.pdf" target="_blank">無圖小冊子 (單語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual-booklet/pt-yue/0342_punishment-imageless-bilingual_pt-yue-booklet.pdf" target="_blank">雙語無圖小冊子 (葡萄牙語-粵語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless-bil1.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual-booklet/pt-zh/0342_punishment-imageless-bilingual_pt-zh-booklet.pdf" target="_blank">雙語無圖小冊子 (葡萄牙語-國語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+          <li><a href="https://gitlab.com/global-asp/sbhk-pdf/raw/master/imageless-bilingual-booklet/pt-en/0342_punishment-imageless-bilingual_pt-en-booklet.pdf" target="_blank">雙語無圖小冊子 (葡萄牙語-英語)<br><center><img src="/storybooks-hongkong/css/editions/booklet-imageless-bil2.svg" width="100"></center></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a class="btn btn-primary" onclick="pdfdl()">關閉</a>
+    </div>
+  </div>
 </div>
 
 <hr>
