@@ -2,12 +2,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>香港故事書</title>
-    <description>香港故事書提供一個完全免費開源的教育资源，旨在促進社區語言的識字和讀寫能力，並推廣家庭、學校、社區爲語言學習地點。這40篇譯成各種不同語言的故事來源於非洲故事書項目，按長度和詞彙量分成五個閱讀級別，並爲每一個語言版本錄製語音故事以增加閱讀的樂趣。香港故事書的預設語言爲香港“兩文三語”，即口頭和書寫的粵語、國語、以及英文，除此之外還有在坊間最爲普遍聽到和用到的語言和方言。
+    <description>香港故事書提供一個完全免費開源的教育資源，旨在促進社區語言的識字和讀寫能力，並推廣家庭、學校、社區爲語言學習地點。這40篇譯成各種不同語言的故事來源於非洲故事書項目，按長度和詞彙量分成五個閱讀級別，並爲每一個語言版本錄製語音故事以增加閱讀的樂趣。香港故事書的預設語言爲香港“兩文三語”，即口頭和書寫的粵語、國語、以及英文，除此之外還有在坊間最爲普遍聽到和用到的語言和方言。
 </description>
     <link>https://global-asp.github.io//storybooks-hongkong/</link>
     <atom:link href="https://global-asp.github.io//storybooks-hongkong/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 14 Mar 2020 19:40:44 -0700</pubDate>
-    <lastBuildDate>Sat, 14 Mar 2020 19:40:44 -0700</lastBuildDate>
+    <pubDate>Wed, 06 May 2020 16:22:56 -0700</pubDate>
+    <lastBuildDate>Wed, 06 May 2020 16:22:56 -0700</lastBuildDate>
     <generator>Jekyll v3.1.6</generator>
     
   </channel>
