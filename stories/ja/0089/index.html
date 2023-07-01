@@ -80,7 +80,8 @@
 		</h1>
 		<div class="btn-group cover-buttons">
 			<a href="#text02" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-			<button class="btn btn-lg disabled" id="playbutton01" onclick="playpause('01')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+			<button class="btn btn-lg" id="playbutton01" onclick="playpause('01')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+			<audio id="audio01" onended="resetbutton('01')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/01.mp3"></audio>
 			<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
 			<button onclick="switchlang('日,國','粵,國,英,日')" class="btn btn-lg lang-secondary" title="在日語與國語間切換">國</button>
 			<button onclick="switchlang('日,英','粵,國,英,日')" class="btn btn-lg lang-tertiary" title="在日語與英語間切換">英</button>
@@ -88,11 +89,13 @@
 		<h3><span class="tooltip tooltip-right" data-tooltip="作者"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/pencil.svg" alt="作者"></span> Ursula Nafula</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="插圖"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/art.svg" alt="插圖"></span> Jesse Pietersen</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="譯文"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/global.svg" alt="譯文"></span> Aiko Komatsu</h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="配音"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/megaphone.svg" alt="配音"></span> Yumi Okano</h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="語言"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/language.svg" alt="語言"></span> <a href="/storybooks-hongkong/stories/ja">日語</a></h3>
 		<h3><span class="tooltip tooltip-right" data-tooltip="級別"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/level.svg" alt="級別"></span> <a href="/storybooks-hongkong/stories/ja/level2">2級
 </a></h3>
-		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <span class="cover_msg">本故事尚未有語音版。</span></h3>
-
+		<h3><span class="tooltip tooltip-right" data-tooltip="將整故事唸出來"><img class="cover-icon cover-icon-audio" src="/storybooks-hongkong/css/speaker.svg" alt="將整故事唸出來"></span> <audio id="audioplayer" controls><source src="https://globalstorybooks.net/media/audio/ja/0089/ja-0089_khalai.mp3" type="audio/mpeg"></audio></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="播放速度"><img class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/speedometer.svg" alt="播放速度" style="cursor:pointer" onclick="normalspeed()"></span> <span id="slider_tooltip" class="tooltip" data-tooltip="播放速度: 1×"><input type="range" min="0.5" max="1.5" value="1" step="0.05" id="audio_slider" class="slider" oninput="adjustslider()"></span></h3>
+		<h3><span class="tooltip tooltip-right" data-tooltip="自動唸故事 (測試中)"><img id="autoplay_icon" class="cover-icon cover-icon-text" src="/storybooks-hongkong/css/play.svg" alt="自動唸故事" style="cursor:pointer" onclick="autoplay()"></span></h3>
 	</div>
 </div>
 <div class="modal" id="modal-pdf">
@@ -146,7 +149,7 @@
         <div id="text02" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/02.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	この子はカライ、７歳の女の子です。カライの名前はカライの国の言葉のブクス語で「良いもの」という意味です。
+	この子はカライ、７歳の女の子です。カライの名前は彼女の国の言葉のブクス語で「良いもの」という意味です。
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -156,17 +159,14 @@
 	這是卡萊。她今年七歲。在肯尼亞當地方言裡，這個名字是“美好事物”的意思。
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	This is Khalai.
-She is seven years old.
-Her name means ‘the
-good one’ in her
-language, Lubukusu.
+	This is Khalai. She is seven years old. Her name means ‘the good one’ in her language, Lubukusu.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text01" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#text03" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton02" onclick="playpause('02')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio02" onended="resetbutton('02')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/02.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton02" onclick="playpause('02')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -191,17 +191,14 @@ language, Lubukusu.
 	卡萊早上醒來，跟橙子樹說：“橙子樹啊橙子樹，快點長大吧，給我們結好多又大又甜的橙子！”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	Khalai wakes up and
-talks to the orange tree.
-“Please orange tree,
-grow big and give us
-lots of ripe oranges.”
+	Khalai wakes up and talks to the orange tree. “Please orange tree, grow big and give us lots of ripe oranges.”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text02" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#text04" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton03" onclick="playpause('03')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio03" onended="resetbutton('03')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/03.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton03" onclick="playpause('03')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -216,7 +213,7 @@ lots of ripe oranges.”
 <div id="text04" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/04.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	カライは学校まで歩いて行きます。歩きながら、カライは草に話しかけます。「お願い、草たち、もっと濃い緑になってね。カラカラに乾いたりしないでね」
+	カライは学校まで歩いて行きます。道すがら、カライは草に話しかけます。「お願い、草たち、もっと濃い緑になってね。カラカラに乾いたりしないでね」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -226,17 +223,14 @@ lots of ripe oranges.”
 	在卡萊走路去上學的路上，她對草地說：“草地啊草地，你一定要長得綠油油的，別乾枯了。”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	Khalai walks to school.
-On the way she talks to
-the grass. “Please
-grass, grow greener
-and don’t dry up.”
+	Khalai walks to school. On the way she talks to the grass. “Please grass, grow greener and don’t dry up.”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text03" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#text05" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton04" onclick="playpause('04')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio04" onended="resetbutton('04')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/04.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton04" onclick="playpause('04')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -261,17 +255,14 @@ and don’t dry up.”
 	卡萊路過了野花，她對野花說：“野花啊野花，你們盡情地開放吧，這樣我可以把你們夾在我的頭髮裡。”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	Khalai passes wild
-flowers. “Please
-flowers, keep blooming
-so I can put you in my
-hair.”
+	Khalai passes wild flowers. “Please flowers, keep blooming so I can put you in my hair.”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text04" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#text06" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton05" onclick="playpause('05')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio05" onended="resetbutton('05')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/05.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton05" onclick="playpause('05')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -296,19 +287,14 @@ hair.”
 	在學校，卡萊對操場中間的樹說：“小樹啊小樹，快點長出枝葉吧，這樣我們就可以在樹蔭裡讀書了。”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	At school, Khalai talks
-to the tree in the
-middle of the
-compound. “Please
-tree, put out big
-branches so we can
-read under your shade.”
+	At school, Khalai talks to the tree in the middle of the compound. “Please tree, put out big branches so we can read under your shade.”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text05" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#text07" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton06" onclick="playpause('06')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio06" onended="resetbutton('06')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/06.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton06" onclick="playpause('06')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -333,17 +319,14 @@ read under your shade.”
 	卡萊還對學校附近的灌木叢說：“灌木啊灌木，你們一定要長得壯壯的，這樣壞人就進不了學校了。”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	Khalai talks to the
-hedge around her school.
-“Please grow strong
-and stop bad people
-from coming in.”
+	Khalai talks to the hedge around her school. “Please grow strong and stop bad people from coming in.”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text06" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#text08" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton07" onclick="playpause('07')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio07" onended="resetbutton('07')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/07.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton07" onclick="playpause('07')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -358,7 +341,7 @@ from coming in.”
 <div id="text08" class="columns">
 	<div class="column col-5 col-lg-12 col-md-12 col-sm-12"><img class="img-responsive" src="https://raw.githubusercontent.com/global-asp/gsn-imagebank/master/0089/08.jpg"></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt def"><h3>
-	カライは学校から家に帰ると、オレンジの木のところへ行き訪ねます。「オレンジの木さん、あなたの実は熟れたかしら？」とカライは尋ねます。
+	カライは学校から家に帰ると、オレンジの木のところへ行きたずねます。「オレンジの木さん、あなたの実は熟れたかしら？」
 	</h3></div>
 
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l1"><h3>
@@ -368,17 +351,14 @@ from coming in.”
 	當卡萊從學校回到家裡，她又去看了看橙子樹，問它：“你結橙子了嗎？”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	When Khalai returns
-home from school, she
-visits the orange tree.
-“Are your oranges ripe
-yet?” asks Khalai.
+	When Khalai returns home from school, she visits the orange tree. “Are your oranges ripe yet?” asks Khalai.
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text07" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#text09" class="btn btn-lg" title="下一頁"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton08" onclick="playpause('08')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio08" onended="resetbutton('08')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/08.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton08" onclick="playpause('08')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -403,19 +383,14 @@ yet?” asks Khalai.
 	卡萊歎了一口氣：“橙子還是綠色的，我明天再來看看你吧！或許到了明天你就會給我一隻又大又甜的橙子了。”
 	</h3></div>
 	<div class="column col-6 col-lg-11 col-md-12 col-sm-12 level2-txt l3"><h3>
-	“The oranges are still
-green,” sighs Khalai.
-“I will see you tomorrow
-orange tree,” says
-Khalai. “Perhaps then
-you will have a ripe
-orange for me!”
+	“The oranges are still green,” sighs Khalai. “I will see you tomorrow orange tree,” says Khalai. “Perhaps then you will have a ripe orange for me!”
 	</h3></div>
 	<div class="column col-1 col-lg-1 col-md-12 col-sm-12">
 	<div class="btn-group switcher-group">
 		<a href="#text08" class="btn btn-lg" title="上一頁"><i class="icon-arrow-up"></i></a>
 		<a href="#colophon" class="btn btn-lg" title="故事信息"><i class="icon-arrow-down"></i></a>
-		<button class="btn btn-lg disabled" id="playbutton09" onclick="playpause('09')" title="播放/暫停"><i class="icon-volume-up"></i></button>
+		<audio id="audio09" onended="resetbutton('09')" src="https://globalstorybooks.net/media/audio/ja/0089/mp3/09.mp3"></audio>
+		<button class="btn btn-lg" id="playbutton09" onclick="playpause('09')" title="播放/暫停"><i class="icon-volume-up"></i></button>
 	</div>
 	<div class="btn-group switcher-group">
 		<button onclick="switchlang('日,粵','粵,國,英,日')" class="btn btn-lg lang-primary" title="在日語與粵語間切換">粵</button>
@@ -433,6 +408,7 @@ orange for me!”
 		<h5><span class="colophon-heading">作者:</span> Ursula Nafula</h5>
 		<h5><span class="colophon-heading">插圖:</span> Jesse Pietersen</h5>
 		<h5><span class="colophon-heading">譯文:</span> Aiko Komatsu</h5>
+		<h5><span class="colophon-heading">配音:</span> Yumi Okano</h5>
 		<h5><span class="colophon-heading">語言:</span> <a href="/storybooks-hongkong/stories/ja">日語</a></h5>
 		<h5><span class="colophon-heading">級別:</span> <a href="/storybooks-hongkong/stories/ja/level2">2級
 </a></h5>
